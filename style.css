@@ -107,7 +107,18 @@ p {
   padding-bottom: 2em;
 }
 
-#section-a p, #section-c p, #showcase p {
+.content-text {
+  display: flex;
+  padding: 0 5em;
+}
+
+#section-a p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#section-c p,
+#showcase p {
   width: 62%;
   text-align: center;
   margin: 0 auto;
@@ -116,10 +127,24 @@ p {
 #section-b {
   padding: 2em 1em 1em;
   background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 515px;
+  width: 272px;
+}
+
+.card-content {
+  padding: 1.5em;
+  background-color: #fff;
 }
 
 .card img {
   max-width: 272px;
+  width: 100%;
+  display: block;
 }
 
 #section-b ul {
@@ -131,8 +156,9 @@ p {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #fff;
+  background: #333;
   color: #333;
+  padding: 0.7em;
 }
 
 #section-c {
