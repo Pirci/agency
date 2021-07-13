@@ -25,7 +25,7 @@ a {
 }
 
 /*
-********************* Main Style *********************
+********************* Core Style *********************
 */
 
 body {
@@ -36,4 +36,160 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/*
+********************* Header Showcase Style *********************
+*/
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333 url(img/code-screen.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+/*
+********************* Main Area Style *********************
+*/
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+#section-a p, #section-c p, #showcase p {
+  width: 62%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#section-b {
+  padding: 2em 1em 1em;
+  background-color: #333;
+}
+
+.card img {
+  max-width: 272px;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+#section-d {
+  display: flex;
+}
+
+#blue-box,
+#black-box {
+  flex: 1;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+/*
+********************* Footer Style *********************
+*/
+
+#main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/*
+********************* Media Quaries *********************
+*/
+
+@media (min-width: 700px) #section-b ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 700px) #section-b li {
+  width: 31%;
 }
