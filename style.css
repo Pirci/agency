@@ -211,11 +211,31 @@ p {
 ********************* Media Quaries *********************
 */
 
-@media (min-width: 700px) #section-b ul {
-  display: flex;
-  justify-content: space-around;
-}
+@media (max-width: 700px) {
+  #main-footer,
+  #section-d,
+  #section-b ul {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (min-width: 700px) #section-b li {
-  width: 31%;
+  .content-text,
+  .content-text p {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    height: 515px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+  }
 }
