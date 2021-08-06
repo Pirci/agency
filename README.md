@@ -1,8 +1,7 @@
-### Seytech Fullstack Software Developer Bootcamp
+### Agency Project
 
-> HTML & CSS #8th Practice Project (Agency).
+> HTML & CSS  Agency Project
 
-From [Fullstack Software Developer Bootcamp](https://www.seytech.co/)
 
 ## Live Demo
 
